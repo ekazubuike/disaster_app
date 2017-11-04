@@ -1,0 +1,23 @@
+{
+  "name": "disaster_app",
+  "version": "1.0.0",
+  "description": "An app to dynamically render disaster-related social media data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekazubuike/disaster_app.git"
+  },
+  "author": "EK Azubuike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekazubuike/disaster_app/issues"
+  },
+  "homepage": "https://github.com/ekazubuike/disaster_app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
