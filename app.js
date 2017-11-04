@@ -1,5 +1,3 @@
-module.exports = require('./node_modules/twitter-node-client/lib/Twitter');
-
 const	bodyParser	= require('body-parser'),
 		express		= require('express'),
 		OAuth2		= require('oauth').OAuth2,
