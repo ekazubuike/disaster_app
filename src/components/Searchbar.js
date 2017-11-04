@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import Datetime from "react-datetime";
 
 class Searchbar extends Component {
     render() {
         return <div>
+            <Datetime/>
             <form className="form-inline offset-md-3">
               <input className="form-control mr-sm-2" type="text" placeholder="Search" />
               <button className="btn btn-outline-success my-2 my-sm-0" type="submit">

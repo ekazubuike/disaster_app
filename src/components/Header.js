@@ -16,7 +16,7 @@ class Header extends Component {
           <span className="navbar-toggler-icon" />
         </button>
         <a className="navbar-brand" href="#">
-          Navbar
+          Disaster Relief
         </a>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
