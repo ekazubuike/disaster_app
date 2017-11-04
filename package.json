@@ -18,6 +18,8 @@
   "homepage": "https://github.com/ekazubuike/disaster_app#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "oauth": "^0.9.15",
+    "twitter-node-client": "0.0.6"
   }
 }
