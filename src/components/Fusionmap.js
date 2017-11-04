@@ -4,7 +4,8 @@ const {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
-  FusionTablesLayer
+  FusionTablesLayer,
+  Marker
 } = require("react-google-maps");
 
 const MapWithAFusionTablesLayer = compose(
@@ -12,7 +13,7 @@ const MapWithAFusionTablesLayer = compose(
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px` }} />,
+    containerElement: <div style={{ height: `600px` }} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
   withScriptjs,
@@ -20,7 +21,7 @@ const MapWithAFusionTablesLayer = compose(
 )(props => (
   <GoogleMap
     defaultZoom={11}
-    defaultCenter={{ lat: 41.850033, lng: -87.6500523 }}
+    defaultCenter={{ lat: 29.737786, lng: -95.539293 }}
   >
     <FusionTablesLayer
       url="http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml"
@@ -30,6 +31,16 @@ const MapWithAFusionTablesLayer = compose(
           from: `1mZ53Z70NsChnBMm-qEYmSDOvLXgrreLTkQUvvg`
         }
       }}
+    />
+    <Marker
+      position={{ lat: 29.737786, lng: -95.539293 }}
+      onClick={this.onMarkerClick}
+      label={"Dolores park"}
+    />
+    <Marker
+      position={{ lat: 29.7422, lng: -95.538457 }}
+      onClick={this.onMarkerClick}
+      label={"Ice cream"}
     />
   </GoogleMap>
 ));
